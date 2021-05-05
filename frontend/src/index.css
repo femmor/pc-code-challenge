@@ -1,0 +1,138 @@
+:root  {
+  --primary: #61A0FF;
+  --blue: #61A0FF;
+  --main-color: #61A0FF;
+  --light-main-color: #94BFFF;
+  --main-white: white;
+  --main-black: black;
+  --mid-gray: #AAA;
+  --main-gray: #333;
+  --light-gray: #ccc;
+  --off-white: whitesmoke;
+}
+
+body {
+  background-color: var(--off-white);
+  margin: 0;
+  padding: 0;
+  font-size: 16px;
+  color: var(--main-gray);
+}
+
+hr {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  border: 0;
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+  font-weight: 700;
+}
+
+.app {
+  border-radius: 24px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  max-width: 640px;
+  background-color: var(--main-white);
+  margin: 30px auto;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.10), 0 2px 4px rgba(0,0,0,0.2);
+}
+
+.app-title {
+  font-size: 2.2rem;
+  font-weight: 700;
+  padding: 10px 30px;
+}
+
+.movie-form-container {
+  padding: 10px 30px;
+}
+
+label.col-sm-2.col-form-label {
+  font-weight: 600;
+}
+
+.form-control:focus {
+  border-color: var(--main-color) !important;
+}
+
+.stars a {
+  padding: 0 3px;
+}
+
+.stars a i.default {
+  color: var(--light-gray);
+}
+
+.btn-grad {
+   padding: 12px 0;
+   text-align: center;
+   transition: 0.5s;
+   background-size: 200% auto;
+   color: var(--main-white);            
+   box-shadow: 0px 2px 4px rgba(97, 160, 255, 0.5), 0px 4px 8px rgba(97, 160, 255, 0.25);
+   border: 1px solid var(--main-color);
+   border-radius: 8px;
+   background: linear-gradient(180deg, var(--light-main-color) 0%, var(--main-color) 100%)
+ }
+
+ .btn-grad:hover {
+   color: var(--main-white);
+   text-decoration: none;
+ }
+
+ .movie {
+  padding: 3px 30px;
+ }
+
+ .ellipse{
+  background-color: var(--main-color);
+  height: 64px;
+  width: 64px;
+  border-radius: 50%;
+}
+
+.avatar{
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.avatar-title {
+  position: absolute;
+  text-transform: uppercase;
+  font-weight: 500;
+  color: var(--main-white);
+}
+
+.movie .right .stars .fas {
+  color: #FFC93D;
+}
+
+.movie-title {
+  font-weight: 600;
+  font-size: 1.2rem;
+  line-height: 29px;
+  color: var(--main-black);
+}
+
+.category {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 19px;
+  color: var(--mid-gray);
+}
+
+.small-text {
+  color: var(--mid-gray);
+  margin-left: 3px;
+}
+
+.loader {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
